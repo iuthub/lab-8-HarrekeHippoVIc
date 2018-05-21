@@ -1,8 +1,9 @@
 <?php
 
 namespace App;
-
-class Post
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+class Post extends  Authenticatable
 {
     public function getPosts($session)
     {
